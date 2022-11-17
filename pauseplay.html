@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<style>
+		
+		#vid{
+
+			width: 100px;
+			height: 100px;
+			background-color: salmon;
+
+		}
+
+
+
+	</style>
+</head>
+<body>
+
+<div id ="vid"></div>
+
+<script type="text/javascript">
+		
+
+	var click = 0;
+
+		vid.addEventListener(
+			"click", function(){
+
+				click = click +1
+
+
+			if (click%2 == 0) {
+				console.log(click);
+				vid.style.backgroundColor = "red"; }
+
+
+			else if (click%2 == 1) {
+				console.log(click);
+				vid.style.backgroundColor = "blue";}
+
+})
+
+	</script>
+
+</body>
+</html>

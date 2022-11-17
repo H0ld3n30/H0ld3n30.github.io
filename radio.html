@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<style >
+	
+.radio{
+	background-image: url(dog.png);
+	background-repeat:no-repeat;
+	width: 100;
+	height: 70;
+	background-size:contain;
+	display: inline-block;
+
+
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<a href="projects.html"> back to projects</a>
+
+
+<script type="text/javascript">
+	
+function fillRadio (){
+	var boop = document.createElement("div");
+	document.body.appendChild(boop);
+	boop.classList.add("radio");
+
+}
+
+setInterval(
+	fillRadio, 100
+	)
+
+</script>
+
+
+
+
+</body>
+</html>

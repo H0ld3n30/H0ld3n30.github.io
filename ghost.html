@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+
+<style type="text/css">
+	
+	#gull{
+
+		background-image:url(newseagull.png) ;
+		background-size: contain;
+		height: 100px;
+		width: 100px;
+		position: absolute;
+		
+
+	}
+
+
+</style>
+
+</head>
+<body>
+
+	<script type="text/javascript">
+		
+		document.addEventListener("mousemove", 
+			function (event){
+				gull.style.top = event.clientY + "px"
+				gull.style.left = event.clientX + "px"
+
+			})
+
+
+
+	</script>
+
+<div id="gull"></div>
+<a href= "projects.html" > yo </a>
+
+</body>
+</html>
