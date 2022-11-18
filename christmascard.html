@@ -3,7 +3,7 @@
 <head>
 	<style>
 
-		#snowybackground{
+	body{
 
 				width: 100%;
 				height: 830px;
@@ -27,6 +27,15 @@
 
 		}
 
+		#santa {
+			background-image: url(santa.png);
+			width: 330px;
+			height: 380px;
+			background-size: contain;
+			background-repeat: no-repeat;
+
+		}
+
 
 
 	</style>
@@ -34,36 +43,51 @@
 </head>
 <body>
 
-<div id="snowybackground">
-	
-<div id="jeff"> <center> MERRY CHRISTMAS <br> <div id="santa"></div> </center> </div>
-
-</div>
 
 
 
+
+
+
+
+
+<center> 
+
+<div id="jeff">  MERRY CHRISTMAS <br> </div>
+
+<div id="santa"> </div> 
+
+</center> 
+
+
+
+
+
+<audio id="song" src="silent.mp3"></audio>
 
 
 <script type="text/javascript">
-	
+
 	var click = 0;
 
 		document.addEventListener(
-			"click", console.log(click), function(event){ click = click +1
+			"click", function(){
+
+				click = click +1
 
 
-			if (click%2 == 0) {
-				santa.style.backgroundImage = "url()"}
+			if (click%2 == 0) {song.pause()
+				console.log(click);
+				santa.style.backgroundImage = "url()"; }
 
 
-			else if (click%2 == 1) {
-				santa.style.bacgroundImage = 'url(https://bestanimations.com/media/santa-claus/11923941933d-dwarf-santa-wow-reindeer-animated-gif.gif)'}
+			else if (click%2 == 1) {song.play()
+				console.log(click);
+				santa.style.backgroundImage = "url(santa.png)";}
 
-})
-
+}) 
 
 </script>
-
 
 </body>
 </html>
