@@ -26,70 +26,12 @@ body{
 }
 
 
-	#blob{
-
-		background-image:url(blob.png) ;
-		background-size: contain;
-		height: 100px;
-		width: 100px;
-		background-repeat: no-repeat;
-		position: absolute;
-	
-
-	}
-
-	#cuteblob{
-
-		background-image:url(cuteblob.png) ;
-		background-size: contain;
-		height: 100px;
-		width: 100px;
-		background-repeat: no-repeat;
-		position: absolute;
-		
-		
-
-	}
-
 </style>
 
 
 
 </head>
 <body>
-
-
-	<script type="text/javascript"> 
-
-		
-
-		document.addEventListener("mousemove", 
-			function (event){
-				blob.style.top = event.clientY + "px"
-				blob.style.left = event.clientX + "px"
-				cuteblob.style.backgroundImage = "url()"
-				blob.style.backgroundImage = "url(blob.png)"
-			
-
-			})	
-
-
-
-		document.addEventListener("click", 
-			function (event){
-				cuteblob.style.top = event.clientY + "px"
-				cuteblob.style.left = event.clientX + "px"
-				cuteblob.style.backgroundImage = "url(cuteblob.png)"
-				blob.style.backgroundImage = "url()"
-
-			})
-
-
-	</script>
-
-	<div id="blob"></div>
-
-	<div id="cuteblob"></div>
 
 
 
