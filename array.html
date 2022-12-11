@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<style type="text/css">
+		
+		#box{
+			width: 300px;
+			height: 300px;
+			border: 1px solid black;
+			
+			
+		}
+
+	</style>
+
+</head>
+<body>
+
+<div id="box"></div>
+
+<script type="text/javascript">
+	
+
+
+	var album = ["bananas", "pears", "apples", "orange", "grape"]
+
+
+	box.addEventListener("click", function(){
+
+			var fun = Math.round(Math.random()*5);
+			console.log(fun)
+
+			box.innerText = album[fun]
+
+		})
+
+
+</script>
+
+</body>
+</html>
