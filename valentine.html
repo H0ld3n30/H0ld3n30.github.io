@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<style type="text/css">
+
+.body{
+width: 1000px;
+height: 800px;
+background-repeat: no-repeat;
+
+
+
+
+}
+
+body{
+	margin: none;
+}
+
+#football{
+	width: 200px;
+	height: 150px;
+	background-image: url(ftb3.png);
+	background-size: contain;
+	background-repeat: no-repeat;
+	
+
+}
+
+
+#happy{
+
+width: 500px;
+height: 800px;
+background-size: contain;
+background-position: center;
+animation-name: holy;
+animation-duration: 10s;
+animation-iteration-count: infinite;
+animation-direction: alternate-reverse;
+display: center;
+background-repeat: no-repeat;
+}
+
+@keyframes holy {
+  0%   {width: 100;}
+  25%  {width: 200;}
+  50%  {width: 300;}
+  100% {width: 400;}
+}
+
+
+
+
+
+</style>
+
+
+</head>
+
+<!-- when i click it changes the background color to a football skin background -->
+<body>
+<div id = "football" ></div>
+<div id = "background"></div>
+<div id = "happy" ></div>
+
+
+
+
+
+<script type="text/javascript">
+
+
+
+football.addEventListener("click",function(){
+	const background = document.getElementById("background");
+	document.body.style.backgroundImage = "url(footballtexture.jpeg)";
+	document.body.style.backgroundRepeat = "no-repeat";
+	document.body.style.backgroundSize = "cover";
+	football.style.backgroundImage = "url(-)"
+
+	background.innerText = "Happy Valentine's Day";
+	background.style.fontSize = '80px';
+	background.style.textAlign = 'center';
+	background.style.color = 'white';
+	happy.style.backgroundImage = "url(Geno.png)";
+	happy.style.backgroundSize = "fill";
+	// var happy = document.createElement('div');
+	// happy.classList.add("hap");
+	// happy.innerText = "Happy Valentine's Day";
+	// happy.style.fontSize = '200px';
+// 	var happy = document.createElement('div')
+// 	happy.classList.add("hap");
+// 	const elements = document.querySelectorAll('.hap');
+// for (const element of elements) {
+//   element.style.backgroundImage = 'url(Geno.png)';
+// }
+// 	const element = document.querySelector('#happy');
+// let width = 500
+// const animationInterval = setInterval(() => {
+//   width += 500;
+//   happy.style.width = `${width}px`;
+//   happy.style.height = `${width}px`;
+//   if (width >= 1000) {
+//     clearInterval(animationInterval);
+//   }
+// }, 100);
+
+
+
+})
+
+
+	
+</script>
+
+
+</body>
+</html>

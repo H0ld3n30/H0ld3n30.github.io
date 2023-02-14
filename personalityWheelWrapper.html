@@ -20,13 +20,44 @@
 			width:100px;
 			height:100px;
 			background-color:red;
-			border-radius: ;
+			border-radius: 50%;
 
 		}
-/*
+/*This is code taken directrly from this link: https://codepen.io/ant1mas/pen/MeJjaK */
+
+body{
+	padding-top: 30px;
+	padding-bottom: 30px;
+	display: flex;
+	justify-content: center;
+}
+.wrapper{
+	width: 300px;
+	height: 300px;
+	border: 1px solid #ccc;
+	border-radius: 50%;
+	position: relative;
+	overflow: hidden;
+}
+
+	.sector{
+		position: absolute;
+		transform-origin: 100%, 100%;
+		background: #ccc;
+		width: 5000px;
+		height: 5000px;
+		left: 50%;
+		top: 50%;
+		border: 1px solid #999;
+		border-width:2px;
+		margin-top: -5000px;
+		margin-left: -5000px;
+
+}
+
 		input{
-			width:400px;
-			height:200px;
+			width:100px;
+			height:30px;
 		}
 		*/
 /*1. make it able to repeat forever
@@ -48,12 +79,28 @@ create a div that creates a segment for each value of the array.*/
 	<button id="reset">reset</button>
 <br><br>
 	<input id="input2"></input>
+	<button id="button2">submit</button>
 <br><br>
 	<input id="input3"></input>
+	<button id="button3">submit</button>
 
 
 
-<div id="wheel"></div>
+<!-- <div id="wheel"></div> -->
+<div class="wrapper">
+	<div class="sector" style="transform: rotate(75deg) skew(60deg);"></div>
+	<div class="sector" style="transform: rotate(105deg) skew(60deg);"></div>
+	<div class="sector" style="transform: rotate(135deg) skew(60deg);"></div>
+	<div class="sector" style="transform: rotate(165deg) skew(60deg);"></div>
+	<div class="sector" style="transform: rotate(195deg) skew(60deg);"></div>
+	<div class="sector" style="transform: rotate(225deg) skew(60deg);"></div>
+	<div class="sector" style="transform: rotate(255deg) skew(60deg);"></div>
+	<div class="sector" style="transform: rotate(285deg) skew(60deg);"></div>
+	<div class="sector" style="transform: rotate(315deg) skew(60deg);"></div>
+	<div class="sector" style="transform: rotate(345deg) skew(60deg);"></div>
+	<div class="sector" style="transform: rotate(375deg) skew(60deg);"></div>
+	<div class="sector" style="transform: rotate(405deg) skew(60deg);"></div>
+</div>
 
 </center>
 
@@ -82,19 +129,9 @@ create a div that creates a segment for each value of the array.*/
 	document.body.appendChild(square);
 	square.classList.add("squares");
 	square.innerText = element;
-// give each square a number/ different id. 
-// position the radius properly within another div. 
-// Make a function which adjust the border radius for each new segment 
-	square.style.borderRadius = '200px 0px 0px 0px'
+	square.style.borderRadius = '50%'
 
 
-})
-
-array.forEach(function(scoob){
-
-
-
-	
 })
 	
 	})

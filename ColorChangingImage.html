@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+
+	<style type="text/css">
+		#img{
+			width: 350px;
+			height: 500px;
+		}
+
+
+	</style>
+
+</head>
+<body>
+
+<img id = "img" src="santa.png">
+<script type="text/javascript">
+	document.addEventListener("mousemove",
+		function(){
+	
+	img.style.filter = "hue-rotate("+event.clientY+"deg)"
+
+});
+
+//i'm adding an event listener which senses when the mouse moves and makes the filter degree of the image the y coord of the mouse.
+</script>
+
+</body>
+</html>
