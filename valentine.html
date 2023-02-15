@@ -19,11 +19,13 @@ body{
 }
 
 #football{
-	width: 200px;
-	height: 150px;
+	width: 100px;
+	height: 75px;
 	background-image: url(ftb3.png);
 	background-size: contain;
 	background-repeat: no-repeat;
+	position:absolute;
+/*	z-index:-1;*/
 	
 
 }
@@ -34,20 +36,38 @@ body{
 width: 500px;
 height: 800px;
 background-size: contain;
-background-position: center;
-animation-name: holy;
-animation-duration: 10s;
-animation-iteration-count: infinite;
-animation-direction: alternate-reverse;
-display: center;
+position: absolute;
+display: inline-block;
 background-repeat: no-repeat;
+left: 120px;
+top:200px;
+
 }
 
-@keyframes holy {
-  0%   {width: 100;}
-  25%  {width: 200;}
-  50%  {width: 300;}
-  100% {width: 400;}
+#throw{
+
+width: 500px;
+height: 800px;
+background-size: contain;
+position: absolute;
+display: inline-block;
+background-repeat: no-repeat;
+left: 120px;
+top:200px;
+
+}
+
+#light{
+
+width: 500px;
+height: 800px;
+background-size: contain;
+position: absolute;
+left: 800px;
+top: 160px;
+animation-name: holy;
+display: inline-block;
+background-repeat: no-repeat;
 }
 
 
@@ -64,8 +84,9 @@ background-repeat: no-repeat;
 <div id = "football" ></div>
 <div id = "background"></div>
 <div id = "happy" ></div>
-
-
+<div id="launch"></div>
+<div id = "light" ></div>
+<div id = "catch" ></div>
 
 
 
@@ -74,39 +95,35 @@ background-repeat: no-repeat;
 
 
 football.addEventListener("click",function(){
-	const background = document.getElementById("background");
+		console.log("hello?")
+const background = document.getElementById("background");
 	document.body.style.backgroundImage = "url(footballtexture.jpeg)";
 	document.body.style.backgroundRepeat = "no-repeat";
 	document.body.style.backgroundSize = "cover";
-	football.style.backgroundImage = "url(-)"
+		background.innerText = "Happy Valentine's Day";
+		background.style.fontSize = '80px';
+		background.style.textAlign = 'center';
+		background.style.color = 'white';
 
-	background.innerText = "Happy Valentine's Day";
-	background.style.fontSize = '80px';
-	background.style.textAlign = 'center';
-	background.style.color = 'white';
-	happy.style.backgroundImage = "url(Geno.png)";
-	happy.style.backgroundSize = "fill";
-	// var happy = document.createElement('div');
-	// happy.classList.add("hap");
-	// happy.innerText = "Happy Valentine's Day";
-	// happy.style.fontSize = '200px';
-// 	var happy = document.createElement('div')
-// 	happy.classList.add("hap");
-// 	const elements = document.querySelectorAll('.hap');
-// for (const element of elements) {
-//   element.style.backgroundImage = 'url(Geno.png)';
-// }
-// 	const element = document.querySelector('#happy');
-// let width = 500
-// const animationInterval = setInterval(() => {
-//   width += 500;
-//   happy.style.width = `${width}px`;
-//   happy.style.height = `${width}px`;
-//   if (width >= 1000) {
-//     clearInterval(animationInterval);
-//   }
-// }, 100);
+			happy.style.backgroundImage = "url(Geno.png)";
+			happy.style.backgroundSize = "fill";
 
+			light.style.backgroundImage = "url(Lockett1.png)";
+			light.style.backgroundSize = "fill";
+
+
+	document.addEventListener("mousemove", function(event){
+		football.style.left = event.clientX - 50 +"px";
+		football.style.top = event.clientY -37.5 +"px";
+		football.style.zIndex="-1"})
+
+happy.addEventListener("mouseenter", function(){
+
+light.addEventListener("mouseenter", function(){
+	light.style.backgroundImage = "url(lockett2.png)"
+})
+
+});
 
 
 })
