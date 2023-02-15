@@ -97,9 +97,11 @@ background-repeat: no-repeat;
 football.addEventListener("click",function(){
 		console.log("hello?")
 const background = document.getElementById("background");
+
 	document.body.style.backgroundImage = "url(footballtexture.jpeg)";
 	document.body.style.backgroundRepeat = "no-repeat";
 	document.body.style.backgroundSize = "cover";
+
 		background.innerText = "Happy Valentine's Day";
 		background.style.fontSize = '80px';
 		background.style.textAlign = 'center';
@@ -112,15 +114,16 @@ const background = document.getElementById("background");
 			light.style.backgroundSize = "fill";
 
 
-	document.addEventListener("mousemove", function(event){
-		football.style.left = event.clientX - 50 +"px";
-		football.style.top = event.clientY -37.5 +"px";
-		football.style.zIndex="-1"})
+document.addEventListener("mousemove", function(event){
+			football.style.left = event.clientX - 50 +"px";
+			football.style.top = event.clientY -37.5 +"px";
+			football.style.zIndex="-1"})
 
-happy.addEventListener("mouseenter", function(){
-
-light.addEventListener("mouseenter", function(){
-	light.style.backgroundImage = "url(lockett2.png)"
+				happy.addEventListener("mouseenter", function(){
+				happy.style.backgroundImage = "url(Geno2.png)"
+				happy.style.backgroundSize = "fill"
+				light.addEventListener("mouseenter", function(){
+				light.style.backgroundImage = "url(lockett2.png)"
 })
 
 });
