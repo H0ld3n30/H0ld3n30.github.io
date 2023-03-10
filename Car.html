@@ -9,9 +9,12 @@
 		#buggy{
 			width:100px;
 			height:100px;
-			background-color:blue;
+			background-Image:url(lcar.png);
+			background-size: contain;
+			background-repeat: no-repeat;
 			left:10px;
 			position:absolute;
+			transition: .5s;
 		}
 	</style>
 </head>
@@ -22,13 +25,47 @@
 	<script type="text/javascript">
 		buggy.style.left = "0px";
 
-		 var x = parseInt(buggy.style.left);
+		 var x = 0;
+		 var w = 10;
+		 var h = 10;
 
-		document.addEventListener("keydown", function(event){
-			console.log(x)
-			x = x+10;
 
-			buggy.style.left = x +"px";
+		document.addEventListener("keydown",function(event){
+
+			if (event.key == 'd') {
+				x = x+100;
+				buggy.style.left = x + "px"
+				buggy.style.backgroundImage = "url(lcar.png)"
+
+			}
+
+			else if (event.key == 'a') {
+				x = x-100;
+				buggy.style.left = x + "px"
+				buggy.style.backgroundImage = "url(lcarreverse.png)"
+			}
+			if (event.key == 'w') {
+				x = x-1;
+				w = w-50;
+				h = h-50;
+				buggy.style.top = x + "px"
+				buggy.style.width = w + "px"
+				buggy.style.height = h + "px"
+				buggy.style.backgroundImage = "url(lamcarback.png)"
+			}
+
+			else if (event.key == 's') {
+				x = x+1;
+				w = w+50;
+				h = h+50;
+				buggy.style.top = x + "px"
+				buggy.style.width = w + "px"
+				buggy.style.height = h + "px"
+				buggy.style.backgroundImage = "url(lamcarfront.png)"
+
+			}
+
+
 
 		})
 

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+#display{
+
+width: 1000px;
+height: 300px;
+font-size: 200px;
+
+
+
+}
+</style>
+</head>
+<body>
+<div id="display">-</div>
+<script type="text/javascript">
+	
+var x = 0;
+
+function multiple(){
+
+	for(let i = 0; i < 1000; i = i+1){
+
+		if (i%3 == 0){
+
+		x = x + i
+
+		}
+
+			else if (i%5 == 0){
+
+			x = x + i
+
+
+			}
+		
+
+	}
+display.innerText= x;
+console.log(x)
+
+
+}
+multiple()
+</script>
+
+</body>
+</html>
