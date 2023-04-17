@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<style type="text/css">
+		.circle {
+			position: absolute;
+			border-radius: 50%;
+			transition: all 0.3s ease-out;
+		}
+	</style>
+</head>
+<body>
+	<script type="text/javascript">
+		// Create 100 circles
+		for (var i = 0; i < 100; i++) {
+			var circle = document.createElement("div");
+			circle.classList.add("circle");
+			circle.style.width = Math.floor(Math.random() * 50 + 10) + "px";
+			circle.style.height = circle.style.width;
+			circle.style.backgroundColor = "rgb(" + Math.floor(Math.random() * 256) + "," +
+				Math.floor(Math.random() * 256) + "," + Math.floor(Math.random() * 256) + ")";
+			document.body.appendChild(circle);
+		}
+
+		// Function to move circles with the mouse and randomly
+		function moveCircle(event) {
+			var circles = document.querySelectorAll(".circle");
+			circles.forEach(function(circle) {
+				var x = event.clientX - circle.offsetWidth / 2;
+				var y = event.clientY - circle.offsetHeight / 2;
+				var randomX = Math.floor(Math.random() * window.innerWidth);
+				var randomY = Math.floor(Math.random() * window.innerHeight);
+				var newX = (Math.random() < 0.5) ? x : randomX;
+				var newY = (Math.random() < 0.5) ? y : randomY;
+				circle.style.left = newX + "px";
+				circle.style.top = newY + "px";
+			});
+		}
+
+		// Add event listener to document
+		document.addEventListener("mousemove", moveCircle);
+	</script>
+</body>
+</html>

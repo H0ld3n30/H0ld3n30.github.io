@@ -1,0 +1,67 @@
+<!-- - The dots change color randomly
+- the dots are of different sizes
+- When the mouse moves, the dots follow the mouse and compress (change position)
+- when the mouse stops, the dots expand (changing the limits of position)
+- the dots stay within a given radius
+- they don't interact
+- the dots remain the same size
+- many dots
+
+Make many dots -->
+<!DOCTYPE html>
+<html>
+<head>
+<style type="text/css">
+	
+.circles{
+
+width: 100px;
+height: 100px;
+border-radius: 50%;
+background-color: blue;
+
+
+
+}
+
+
+
+
+</style>
+</head>
+<body>
+
+	<script type="text/javascript">
+	
+		function makedots (){
+
+			var circle = document.createElement("div");
+			document.body.appendChild(circle);
+			circle.classList.add("circles");
+			
+			function color (){
+				var r = Math.random((Math.round)*255); 
+				var g = Math.random(Math(Math.round)*255);
+				var b = Math.random((Math.round)*255);
+
+				circle.style.backgroundColor = "rgb("+r+","+g+","+b+")"
+
+
+			}
+
+		}
+
+		color();
+
+		for(var i = 0; i<100; i=i+1){
+
+
+			makedots();
+
+
+		}
+
+	</script>
+
+</body>
+</html>
