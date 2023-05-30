@@ -1,0 +1,408 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>reveal.js</title>
+
+		<link rel="stylesheet" href="dist/reset.css">
+		<link rel="stylesheet" href="dist/reveal.css">
+		<link rel="stylesheet" href="dist/theme/dracula.css">
+
+		<!-- Theme used for syntax highlighted code -->
+		<link rel="stylesheet" href="plugin/highlight/monokai.css">
+
+
+		<style type="text/css">
+			.heads{
+				display: inline-block;
+				background-repeat: no-repeat;
+				background-position: center;
+
+
+
+			}
+			#front{
+
+				width: 300px;
+				height: 300px;
+				background-image: url(head1.jpg);
+				background-size: contain;
+			
+			}
+
+			#titile1{
+				font-size: 5px;
+			}
+			#threequarter{
+
+				width: 300px;
+				height: 300px;
+				background-image: url(head2.jpg);
+				background-size: contain;
+				
+			}
+			#side{
+
+				width: 300px;
+				height: 300px;
+				background-image: url(head3.jpg);
+				background-size: contain;
+				
+				
+			}
+			#headtext{
+				font-size: 15px;
+				margin-bottom: 10px;
+			}
+			#head-container{
+				margin-bottom: 30px;
+			}
+/*EYES*/
+		
+				.eyes{
+				display: inline-block;
+				background-repeat: no-repeat;
+				width: 100px;
+				height: 100px;
+				background-size: contain;
+				background-position: center;
+			}
+			#eyeexample{
+				width: 500px;
+				height: 500px;
+				background-image: url(eyewidth.png);
+				background-repeat: no-repeat;
+				background-size: contain;
+				background-position: center;
+
+
+			}
+
+			#eyetext{
+
+				font-size: 20px;
+			}
+			#e1{background-image: url(e1.jpg);}
+			#e2{background-image: url(e2.jpg);}
+			#e3{background-image: url(e3.jpg);}
+			#e4{background-image: url(e4.jpg);}
+			#e5{background-image: url(e5.jpg);}
+			#e6{background-image: url(e6.jpg);}
+			#e7{background-image: url(e7.jpg);}
+			#e8{background-image: url(e8.jpg);}
+			#e9{background-image: url(e9.jpg);}
+			#e10{background-image: url(e10.jpg);}
+
+			.bigeye{
+				background-repeat: no-repeat;
+				width: 400px;
+				height: 400px;
+				background-size: contain;
+				background-position: center;
+			}
+/*NOSES*/
+
+			.nose{
+				display: inline-block;
+				position: relative;
+			}
+			#nose1{
+
+				width: 400px;
+				height: 400px;
+				background-image: url(noses.jpg);
+				background-size: contain;
+				background-repeat: no-repeat;
+
+
+			}
+
+			#nosetext{
+
+				font-size: 30px;
+			}
+/*mouth*/
+			.mouths{
+				width: 300px;
+				height: 300px;
+				background-size: contain;
+				background-position: center;
+				
+				background-repeat: no-repeat;
+				font-size: 20px;
+			}
+
+			#mouth1{background-image: url(mouth1.jpg);}
+			#mouth2{background-image: url(mouth2.jpg);}
+			#mouthgeneral{ background-image: url(MouthGeneral.jpg);}
+
+			.mouthtext{
+				font-size: 200px;
+			}
+/*Hair*/
+			.hairslidepic{
+
+			}
+			#hair1{background-image: url(hair1.jpg);}
+			#hair2{background-image: url(hair2.jpg);}
+			#hair3{background-image: url(hair3.jpg);}
+
+/*Examples*/
+			#ex1{background-image: url(IMG-2101.jpg);}
+			#ex2{background-image: url(IMG-2102.jpg);}
+			#ex3{background-image: url(IMG-2103.jpg);}
+			#ex4{background-image: url(IMG-2104.jpg);}
+			#ex5{background-image: url(IMG-2105.jpg);}
+			#ex6{background-image: url(IMG-2106.jpg);}
+			#ex7{background-image: url(IMG-2107.jpg);}
+			#ex8{background-image: url(IMG-2108.jpg);}
+			#ex9{background-image: url(IMG-2109.jpg);}
+			#ex10{background-image: url(IMG-2110.jpg);}
+			#ex14{background-image: url(IMG-2114.jpg);}
+			#ex15{background-image: url(IMG-2115.jpg);}
+			#ex16{background-image: url(IMG-2116.jpg);}
+			#ex17{background-image: url(IMG-2117.jpg);}
+			#ex18{background-image: url(IMG-2118.jpg);}
+			#ex19{background-image: url(IMG-2119.jpg);}
+			#ex20{background-image: url(IMG-2120.jpg);}
+			#ex21{background-image: url(IMG-2121.jpg);}
+			#ex22{background-image: url(IMG-2122.jpg);}
+			#ex23{background-image: url(IMG-2123.jpg);}
+			#ex24{background-image: url(IMG-2124.jpg);}
+			#ex25{background-image: url(IMG-2125.jpg);}
+			#ex26{background-image: url(IMG-2126.jpg);}
+			#ex27{background-image: url(IMG-2127.jpg);}
+			#ex28{background-image: url(IMG-2128.jpg);}
+			#ex29{background-image: url(IMG-2129.jpg);}
+		</style>
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+				<section> 1. Head Structure </section>
+				 <section id = "head">
+				 	<div id="head-container">
+				 	  <div class="fragment" id ="headtext">- To draw a head, first, get really good at drawing circles. I know, it's boring, but it will pay off.</div>
+				 	  <div class="fragment" id="headtext">- After drawing a circle, make a curved line to complete the sphere (Front view = middle, 3/4 = well 3/4 of the sphere, and side = edge), and a straight line extending down. Finally, draw the jawline.</div>
+				 	  <div class="fragment" id="headtext">- Also draw the lines for the eyes, nose, and mouth following the half-half-half rule (the eyes are half of the head or at the top of the ears, the nose is halfway between the eyes and chin, and the mouth is halfway between the nose and chin.</div>
+				 	  <div class="fragment" id="headtext">- Remember that the head is roughly a sphere, so draw curved lines around the head for the features, especially with the 3/4 view.</div> </div>
+  					<div class="heads" id="front"></div>
+				 	<div class = "heads"id = "threequarter"></div>
+				 	<div class = "heads"id = "side"></div>
+				 	
+				 </section>
+
+				<section>2. Eyes</section>
+				<section>
+
+				<div id="eyetext">To make this straightforward, draw a sphere, then draw the eye as curving around it. To position the eyes on the face, place them one eye-width apart. </div>
+
+				<div id="eyeexample"></div>
+
+				<div id="eyetext">The following images show the process of creating a single, front facing eye.</div> </section>
+
+				<section data-transition="none">
+					<center><div class="bigeye" id="e1"></div></center>
+				</section>
+				<section data-transition="none">
+					<center><div class="bigeye" id="e2"></div></center>
+				</section>
+				<section data-transition="none">	
+					<center><div class="bigeye" id="e3"></div></center>
+				</section>
+				<section data-transition="none">
+					<center><div class="bigeye" id="e4"></div></center>
+				</section>
+				<section data-transition="none">
+					<center><div class="bigeye" id="e5"></div></center>
+				</section>
+				<section data-transition="none">
+					<center><div class="bigeye" id="e6"></div></center>
+				</section>
+				<section data-transition="none">
+					<center><div class="bigeye" id="e7"></div></center>
+				</section>
+				<section data-transition="none">
+					<center><div class="bigeye" id="e8"></div></center>
+				</section>
+				<section data-transition="none">
+					<center><div class="bigeye" id="e9"></div></center>
+				</section>
+				<section data-transition="none">
+					<center><div class="bigeye" id="e10"></div></center>
+				</section>
+
+				<section>3. Noses</section>
+				<section id="nose">
+					<div class="nose"id="nose1"></div> 
+					<div class="nose"id="nosetext">The main thing with drawing noses is to think about them relative to the angle of the face. A smaller and simpler nose is a younger character, and a more detailed one is an older character. --> P.S. More references in 'examples' section.</div>
+				</section>
+
+				<section>4. Mouths</section>
+				<section class="eyes">
+					<center>
+					<div class = "fragment mouths"id="mouth1"></div></center>
+					<center><div class="fragment mouths" class="mouthtext">For mouths, focus on drawing the line in between the lips (idk what the actual name is).</div></center></section>
+			<section class="eyes">
+				<center><div class = "fragment mouths"id="mouth2"></div></center>
+				<center><div class="fragment mouths" class="mouthtext">Add lips around the line. It could be as simple at a upward curve on top and line of shade for the bottom lip.</div></center>
+					</section>
+<section class="eyes">
+					<center><div class = "fragment mouths"id="mouthgeneral"></div></center>
+					<center><div class="fragment mouths" class="mouthtext">Drawing more of the mouth usually suits a more feminine character, while just drawing the middle line will usually be a younger character. Although these guidelines may vary depending on a person's style. (once again, more types in examples)</div></center>
+					
+					
+				</section>
+
+				<section>5. Hair</section>
+				<section data-transition="none">
+					<center><div class="hairslide" id="rule1">When drawing hair, it's best to draw or imagine the origin of the hair, and draw all strands emanating from or pointing to that origin.</div></center></section>
+				<section data-transition="none">
+					<center><div class="bigeye" id="hair1"></div></center></section>
+				<section data-transition="none">
+					<center><div class="hairslide" id="rule2">Practice curving lines like a strand of hair --> Similar to an aloe leaf.</div></center></section>
+				<section data-transition="none">
+					<center><div class="bigeye" id="hair2"></div></center></section>
+				<section data-transition="none">
+					<center><div class="hairslide" id="rule3">Draw hair strand not as each individual, but as a group of strands (although you can add individual strands mixed in) Vary the size and width. Make sure to change the position of the strands (facing up, facing down), but still make them face the origin. </div></center></section>
+				<section data-transition="none">
+					<center><div class="bigeye" id="hair3"></div></center></section>
+				<section data-transition="none">
+					<center><div class="hairslide" id="Rule4">Obviously, you should erase the origin point, hairline guidelines, etc.</div></center></section>
+				<section>Examples</section>
+				<section></section>
+				<section data-transition="none">
+					<center><div class="bigeye" id="ex1"></div></center>
+				</section>
+				<section data-transition="none">
+					<center><div class="bigeye" id="ex2"></div></center>
+				</section>
+				<section data-transition="none">	
+					<center><div class="bigeye" id="ex3"></div></center>
+				</section>
+				<section data-transition="none">
+					<center><div class="bigeye" id="ex4"></div></center>
+				</section>
+				<section data-transition="none">
+					<center><div class="bigeye" id="ex5"></div></center>
+				</section>
+				<section data-transition="none">
+					<center><div class="bigeye" id="ex6"></div></center>
+				</section>
+				<section data-transition="none">
+					<center><div class="bigeye" id="ex7"></div></center>
+				</section>
+				<section data-transition="none">
+					<center><div class="bigeye" id="ex8"></div></center>
+				</section>
+				<section data-transition="none">
+					<center><div class="bigeye" id="ex9"></div></center>
+				</section>
+				<section data-transition="none">
+					<center><div class="bigeye" id="ex10"></div></center>
+				</section>
+				<section data-transition="none">
+					<center><div class="bigeye" id="ex14"></div></center>
+				</section>
+				<section data-transition="none">
+					<center><div class="bigeye" id="ex15"></div></center>
+				</section>
+				<section data-transition="none">
+					<center><div class="bigeye" id="ex16"></div></center>
+				</section>
+				<section data-transition="none">
+					<center><div class="bigeye" id="ex17"></div></center>
+				</section>
+				<section data-transition="none">	
+					<center><div class="bigeye" id="ex18"></div></center>
+				</section>
+				<section data-transition="none">
+					<center><div class="bigeye" id="ex19"></div></center>
+				</section>
+				<section data-transition="none">
+					<center><div class="bigeye" id="ex20"></div></center>
+				</section>
+				<section data-transition="none">
+					<center><div class="bigeye" id="ex21"></div></center>
+				</section>
+				<section data-transition="none">
+					<center><div class="bigeye" id="ex22"></div></center>
+				</section>
+				<section data-transition="none">
+					<center><div class="bigeye" id="ex23"></div></center>
+				</section>
+				<section data-transition="none">
+					<center><div class="bigeye" id="ex24"></div></center>
+				</section>
+				<section data-transition="none">
+					<center><div class="bigeye" id="ex25"></div></center>
+				</section>
+				<section data-transition="none">
+					<center><div class="bigeye" id="ex26"></div></center>
+				</section>
+				<section data-transition="none">
+					<center><div class="bigeye" id="ex27"></div></center>
+				</section>
+				<section data-transition="none">
+					<center><div class="bigeye" id="ex28"></div></center>
+				</section>
+				<section data-transition="none">
+					<center><div class="bigeye" id="ex29"></div></center>
+				</section>
+			
+				<section>
+					<div class=" fragment eyes" id="e1"></div>
+					<div class=" fragment eyes" id="e2"></div>
+					<div class=" fragment eyes" id="e3"></div>
+					<div class=" fragment eyes" id="e4"></div>
+					<div class=" fragment eyes" id="e5"></div>
+					<div class=" fragment eyes" id="e6"></div>
+					<div class=" fragment eyes" id="e7"></div>
+					<div class=" fragment eyes" id="e8"></div>
+					<div class=" fragment eyes" id="e9"></div>
+					<div class=" fragment eyes" id="e10"></div>
+				</section>
+			</div>
+		</div>
+
+		<script type="text/javascript">
+				
+			// document.addEventListener('keydown', function(event) {
+			// if (event.key === 'Enter') {
+ 		  	//  var image = document.getElementById('front');
+    		// 	  image.style.opacity = 1;}
+    		// if (event.key === 'Shift') {
+ 		  	//  var image = document.getElementById('threequarter');
+    		// 	  image.style.opacity = 1;}
+    		// if (event.key === 'Tab') {
+ 		  	//  var image = document.getElementById('side');
+    		// 	  image.style.opacity = 1;}
+    		// 	});
+
+
+
+
+			
+
+
+		</script>
+
+		<script src="dist/reveal.js"></script>
+		<script src="plugin/notes/notes.js"></script>
+		<script src="plugin/markdown/markdown.js"></script>
+		<script src="plugin/highlight/highlight.js"></script>
+		<script>
+			// More info about initialization & config:
+			// - https://revealjs.com/initialization/
+			// - https://revealjs.com/config/
+			Reveal.initialize({
+				hash: true,
+
+				// Learn about plugins: https://revealjs.com/plugins/
+				plugins: [ RevealMarkdown, RevealHighlight, RevealNotes ]
+			});
+		</script>
+	</body>
+</html>
